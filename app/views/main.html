@@ -1,0 +1,22 @@
+<div class="jumbotron">
+	<p class="lead">
+		User name: {{userName}}
+	</p>
+	<p class="lead">
+		<input type="text" placeholder="0" ng-model="bid">
+		<p><b>Highest bid {{highestBid}}</b></p>
+	</p>
+	<p>
+		<a class="btn btn-lg btn-success" ng-click="placeBid()">Place Bid
+			<span class="glyphicon glyphicon-ok"></span>
+		</a>
+	</p>
+	<div>
+		<p><h3>Placed Bids</h3></p>
+		<ul>
+			<li ng-repeat="bid in allBids">
+				<h3><b>Name:</b> {{bid.name}}  <b>Bid:</b> {{bid.bid}}</h3>
+			</li>
+		</ul>
+	</div>
+</div>
