@@ -1,7 +1,7 @@
 # Bidding Client
 
 Biddin Client is a simple and very trivial angular.js application that allows you to bid on an item and observe in real
-time biddings of other users.
+time bids of other users.
 
 ## Getting started
 
@@ -17,7 +17,20 @@ Run the command,
 ```bash
 bower install
 ```
-it will install all dependencies which `Bidding client use`
+it will install all dependencies which application use.
+
+Run the app,
+```bash
+grunt serve --force
+```
+
+Open a few instances in seperate tabs or windows. 
+
+Start biding on an item.
+
+`IMPORTANT`
+As it was mentioned before, this is very simple app, just to make sure that the `server` part works as expected.
+Please do not `add a bid` that is less than `highest bid`. Otherwise the client app, can crash :)
 
 # License (MIT)
 
