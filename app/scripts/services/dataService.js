@@ -15,8 +15,8 @@ function dataService($http, $rootScope) {
 
 	function getItem (id) {
         return $http.get(config.api + '/auction/' + id)
-            .then(getVenueComplete)
-            .catch(getVenueFailed);
+            .then(getItemComplete)
+            .catch(getItemFailed);
 
         function getItemComplete (res) {
             return res.data;

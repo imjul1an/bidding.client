@@ -24,7 +24,13 @@ Run the app,
 grunt serve --force
 ```
 
-Open a few instances in seperate tabs or windows. 
+Open the following link, which will guide you to specific test item:
+
+```bash
+JSON representation: http://localhost:5000/api/auction/ryrGV6
+Web representation: http://localhost:9000/#/ryrGV6
+```
+and open a few instances in seperate tabs or windows. 
 
 Start biding on an item.
 
