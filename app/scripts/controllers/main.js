@@ -14,17 +14,19 @@ angular.module('clientbiddingApp')
 
 		// place my bid on the item
 		function placeBid() {
-			if($scope.allBids.length > 0) {
-				if($scope.bid > $scope.highestBid) {
-					$scope.allBids.splice(0, 0, {name: $scope.userName , bid: $scope.bid});
-					socketService.emit('place:bid', $scope.bid);
-				} else {
-					alert('You cannot place bid lower than highest bid');
-				}
-			} else {
-				$scope.allBids.splice(0, 0, {name: $scope.userName , bid: $scope.bid});
-				socketService.emit('place:bid', $scope.bid);
-			}
+			$scope.allBids.splice(0, 0, {name: $scope.userName , bid: $scope.bid});
+			socketService.emit('place:bid', $scope.bid);
+			// if($scope.allBids.length > 0) {
+			// 	if($scope.bid > $scope.highestBid) {
+			// 		$scope.allBids.splice(0, 0, {name: $scope.userName , bid: $scope.bid});
+			// 		socketService.emit('place:bid', $scope.bid);
+			// 	} else {
+			// 		alert('You cannot place bid lower than highest bid');
+			// 	}
+			// } else {
+			// 	$scope.allBids.splice(0, 0, {name: $scope.userName , bid: $scope.bid});
+			// 	socketService.emit('place:bid', $scope.bid);
+			// }
 		}
 
 		function _inArray(list, value) {
